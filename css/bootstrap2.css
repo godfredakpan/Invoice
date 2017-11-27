@@ -962,7 +962,7 @@ pre code {
 }
 
 .col-xs-3 {
-  width: 25%;
+  width: 20%;
 }
 
 .col-xs-2 {
@@ -1114,7 +1114,7 @@ pre code {
 }
 
 .col-xs-offset-3 {
-  margin-left: 25%;
+  margin-left: 5%;
 }
 
 .col-xs-offset-2 {
@@ -1651,7 +1651,8 @@ th {
 
 .table {
   width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
+  margin-top: 0px;
 }
 
 .table > thead > tr > th,
@@ -1660,7 +1661,7 @@ th {
 .table > thead > tr > td,
 .table > tbody > tr > td,
 .table > tfoot > tr > td {
-  padding: 8px;
+  padding: 0px;
   line-height: 1.428571429;
   vertical-align: top;
   border-top: 0px solid #dddddd;
@@ -1668,7 +1669,7 @@ th {
 
 .table > thead > tr > th {
   vertical-align: bottom;
-  border-bottom: 2px solid #dddddd;
+  border-bottom: 0px solid #dddddd;
 }
 
 .table > caption + thead > tr:first-child > th,
@@ -1694,7 +1695,7 @@ th {
 .table-condensed > thead > tr > td,
 .table-condensed > tbody > tr > td,
 .table-condensed > tfoot > tr > td {
-  padding: 5px;
+  padding: 3px;
 }
 
 .table-bordered {
@@ -1712,7 +1713,7 @@ th {
 
 .table-bordered > thead > tr > th,
 .table-bordered > thead > tr > td {
-  border-bottom-width: 2px;
+  border-bottom-width: 1px;
 }
 
 .table-striped > tbody > tr:nth-child(odd) > td,
@@ -1814,7 +1815,7 @@ table th[class*="col-"]
 @media (max-width: 767px) {
   .table-responsive {
     width: 100%;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     overflow-x: scroll;
     overflow-y: hidden;
     border: 1px solid #dddddd;
