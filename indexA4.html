@@ -1,55 +1,100 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="en" >
 <head>
-	<meta charset="UTF-8">
-	<title>Invoice</title>
-	<link rel="stylesheet" href="css/bootstrap2.css">
-	<style>
-	@import url(http://fonts.googleapis.com/css?family=Bree+Serif);
-	body, h1, h2, h3, h4, h5, h6{
-		font-family: 'Bree Serif', serif;
-	}
-	hr{
-    color:rgb(235, 16, 16);
-		background-color:rgb(230, 17, 17);
-		
+  <meta charset="UTF-8">
+  <title>A4 CSS page template</title>
+  <link rel="stylesheet" href="css/bootstrap2.css">
+  
+  
+  <style>
+    @import url(http://fonts.googleapis.com/css?family=Bree+Serif);
+    body, h1, h2, h3, h4, h5, h6{
+      font-family: 'Bree Serif', serif;
+    }
+    hr{
+      color:rgb(235, 16, 16);
+      background-color:rgb(230, 17, 17);
+      
+  }
+      /* NOTE: The styles were added inline because Prefixfree needs access to your styles and they must be inlined if they are on local disk! */
+      body {
+  background: rgb(204,204,204); 
 }
+page {
+  background: white;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 0.5cm;
+  box-shadow: 0 0 0.5cm rgba(0,0,0,0.5);
+}
+page[size="A4"] {  
+  width: 21cm;
+  height: 29.7cm; 
+}
+page[size="A4"][layout="portrait"] {
+  width: 29.7cm;
+  height: 21cm;  
+}
+page[size="A3"] {
+  width: 29.7cm;
+  height: 42cm;
+}
+page[size="A3"][layout="portrait"] {
+  width: 42cm;
+  height: 29.7cm;  
+}
+page[size="A5"] {
+  width: 14.8cm;
+  height: 21cm;
+}
+page[size="A5"][layout="portrait"] {
+  width: 21cm;
+  height: 14.8cm;  
+}
+@media print {
+  body, page {
+    margin: 0;
+    box-shadow: 0;
+  }
+}
+    </style>
 
-	</style>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+
 </head>
+
 <body>
-
-	<div class="container">
-
-		<div class="row">
+  <page size="A4">
+    <div class="container">
+    <div class="row">
 			<div class="col-xs-4">
 			  <h1>
 			    <a href="">
-			       <img src="Img/logo.png" width="400" height="130">
+			       <img src="Img/logo.png" width="300" height="110">
 			      
 			    </a>
 			  </h1>
 			</div><br>
 			<div class="col-xs-8 text-left">
 					<font color="#737373">
-						<div class="col-sm-3">
+						
 								<br>
 									
 							</div>
-							<font color="" size="1">	<div class="col-sm-3" style="padding-right:4px; border-right: 1px solid rgb(197, 197, 197);"><img src="Img/message.png" width="30"><br>careers@companyname.com<br>info@companyname.com<p>
+							<font color="" size="0.7">	<div class="col-sm-2" style="padding-right:4px; border-right: 1px solid rgb(197, 197, 197);"><img src="Img/message.png" width="25"><br>careers@companyname.com<br>info@companyname.com<p>
 									
 										jobs@companyname.com<hr>
 								</div>
-								<div class="col-sm-3" style="padding-right:10px; border-right: 1px solid rgb(198, 196, 196);"><img src="Img/phone2.png" width="30"><br>+44(0) 131 1234 1234<p>
+								<div class="col-sm-2" style="padding-right:5px; border-right: 1px solid rgb(198, 196, 196);"><img src="Img/phone2.png" width="25"><br>+44(0) 131 1234 1234<p>
 										Monday to Friday<br>
 										9am to 5pm lines are open<hr>
 									</div>
-						<div class="col-sm-3"><img src="Img/world.png" width="30"><br>www.companywebsite.com<p><br><hr>
+						<div class="col-sm-2"><img src="Img/world.png" width="20"><br>www.companywebsite.com<p><br><hr>
 						
 								
 						</div>
 						</font>
-						<br>
+					
 				
 			</div>
 			
@@ -60,46 +105,46 @@
 		    <div class="col-xs-4">
 		      <div class="">
 		              <div class="">
-		                <h4><img src="Img/invoice.png" width="30">INVOICE TO<a href="#"></a></h4>
+		                <h4><img src="Img/invoice.png" width="20">&nbsp;&nbsp;INVOICE TO<a href="#"></a></h4>
 		              </div>
 		              <div class="">
 		               
-											<h3>STEVEN COLE</h3>
-		                  256 highland garden, london <br>
-											SW1234, United Kingdom <br><br>
+											<h5>STEVEN COLE</h5>
+		                  256 highland garden, london <br><p>
+											SW1234, United Kingdom <br>
 											
-											<img src="Img/message.png" width="30">&nbsp;&nbsp;steven.cole@mywebsite.com<br><br>
-											<img src="Img/phone.png" width="20">&nbsp;&nbsp;017445445454
+											<img src="Img/message.png" width="20">&nbsp;&nbsp;&nbsp;&nbsp;steven.cole@mywebsite.com<br><br>
+											<img src="Img/phone.png" width="15">&nbsp;&nbsp;&nbsp;&nbsp;017445445454
 		                  
-		                </p>
+		                
 		              </div>
 		            </div>
 		    </div>
 		    <div class="col-xs-5 col-xs-offset-2 text-left">
 		      <div class="">
 		              <div class="">
-											<h1><font color="#737373" size="7" >INVOICE<h1></font><p>
-												<img src="Img/total.png" width="120%">
+											<h1><font color="#737373" size="6" >INVOICE<h1></font><p>
+												<img src="Img/total.png" width="125%" height="95">
 		              </div>
 		              <div class="">
 		                 
-		                </p>
+		               
 		              </div>
 		            </div>
 		    </div>
 		  </div> <!-- / end client details section -->
-
+<center>
 			<table class="table table-bordered">
         <thead>
           <tr>
             
-            <th class="text-left"><h3><font color="red">Item Description</font></h3></th>
-            <th><h3><font color="red">Unit Price</h3></th>
-            <th><h3><font color="red">Quantity</h3></th>
-						<th><h3><font color="red">Total</h3></th>
+            <th class="text-left"><h4><font color="red">Item Description</font></h4></th>
+            <th><h4><font color="red">Unit Price</h4></th>
+            <th><h4><font color="red">Quantity</h4></th>
+						<th><h4><font color="red">Total</h4></th>
 						
           </tr>
-        </thead><h4>
+        </thead><h5>
         <tbody><center>
           <tr class="success">
         	<td><b><font color="#737373">Web Design</b><br>An affordable website solution that provides
@@ -137,7 +182,7 @@
 									<td class="row text-right">$600.00</td>
 							</tr>
         </tbody></h4>
-			</table>
+			</table></center>
 			<div class="row">
 		    <div class="col-xs-8">
 		      <div class="">
@@ -145,39 +190,40 @@
 											 </div>
 		              <div class="">
 		              
-												<h><font color="white" size="4"><span style="background-color: rgb(175, 175, 175)">
+												<h><font color="white" size="2"><span style="background-color: rgb(175, 175, 175)">
 													<b>Payment Method</b>:Cheque, Paypal, BACS, Western Union.
-													</span> </h></font><p><br>
-													<img src="Img/PayPal.jpg" width="100" height="40">
-														<h4>payments@websitename.com</h4><br><br>
+													</span> </h></font><p>
+													<img src="Img/PayPal.jpg" width="95" height="30"><br>
+														payments@websitename.com<br>
 
 														<img src="Img/pos.png" width="30"><p>
-															<b><h5>Card Payment</b><br>
+															<b>Card Payment</b><br>
 																We Accept:<p>
-																	Visa, Master card, American Express</h5><br>
+																	Visa, Master card, American Express<br>
 
-																		<img src="Img/westernunion.png"><p>	
-																		<b><h5>Active Interactive</b><p>
+																		<img src="Img/westernunion.png" height="50"><p>	
+																		<b>Active Interactive</b><p>
 																			256 highland garden,<br>
 																				london SW12434, <br>
-																					United Kingdom<p></h5><p>
-																		<h4>Thank you for your business</h4>
+																					United Kingdom<p><p>
+																		Thank you for your business<br><br><br><br><br><br>
 																		<br>
 																		<b>Terms:</b> Payments should be made within 30 days by cheque, western union money transfer or phone us.
-										</p>
+										
 										
 		              </div>
 		            </div>
 				</div>
 				<div class="col-xs-4">
-						<div class="span4">
+						<div class="span6">
 						 <div class="text-right">
-							 <div class="text-right">
+							 
 								
 							 </div>
 							 <div class="text-right" >
 								
-									 <h4>SUB TOTAL :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<h4>SUB TOTAL :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $2302.00 <br>
 									 Tax: VAT 20% :&nbsp;&nbsp;&nbsp;&nbsp;
 									 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $460.40 <br>
@@ -186,9 +232,9 @@
 								$4278.00 </span> </h4></font>
 									 </div>
 								
-									<center><img src="Img/sign.png" width="200" height="100%"><br>
+									<center><img src="Img/sign.png" width="160" height="70"><br>
 									Terry Brown<p>
-											<b>Account Manager</b><br></center>
+											<b>Account Manager</b></center>
 							
 								
 								 
@@ -200,17 +246,17 @@
 					 </div><font color="" size="1">
 					 	 <hr style="border: 3px solid #f00" />
 					 <div class="row">
-							<div class="col-sm-6" style="background-color:rgb(255, 255, 255);"><img src="Img/logo2.png" width="100" height="70"></div>
-							<div class="col-sm-2" style="padding-right:5px; border-right: 1px solid rgb(148, 147, 147);">info@companyname.com<p>
-								careers@companyname.com<br>
+							<div class="col-sm-5" style="background-color:rgb(255, 255, 255);"><img src="Img/logo2.png" width="70" height="50"></div>
+							<div class="col-sm-3" style="padding-right:5px; border-right: 1px solid rgb(148, 147, 147);">info@companyname.com<p>
+								careers@companyname.com
 									jobs@companyname.com
 							</div>
 							<div class="col-sm-2" style="padding-right:5px; border-right: 1px solid rgb(148, 147, 147);">+44(0) 131 1234 1234<br>
-							Monday to Friday<br>
+							Monday to Friday
 						9am to 5pm lines are open
 					</div>
 					<div class="col-sm-2" style="background-color:rgb(255, 255, 255);">
-						www.companyebsite.com</div>
+						www.companywebsite.com</div>
 						</div></font>
 					
 					</div>
@@ -225,5 +271,12 @@
 			 
 
 
+    
+  </page>
+
+
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+  
 </body>
 </html>
